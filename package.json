@@ -1,0 +1,38 @@
+{
+  "name": "test-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panechek/test-layout.git"
+  },
+  "author": "Anna Merkulova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panechek/test-layout/issues"
+  },
+  "homepage": "https://github.com/panechek/test-layout#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "htmlhint": "^1.1.4",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.60.0",
+    "stylelint": "^15.3.0",
+    "stylelint-config-standard": "^31.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-scss": "^4.6.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
+}
