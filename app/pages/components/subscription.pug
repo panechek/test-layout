@@ -1,0 +1,17 @@
+mixin subscription(img)
+    .d-flex.subscription
+    img(src="", alt="" class={"d-none": img})
+    form(action="#")
+        .row.gy-4 
+            h5.col-12.fw-bold Подписаться на новости
+            .col-12.col-md-6
+                label.form-label(for="first") Label
+                input.form-control.p-3(type="text" placeholder="Placeholder" aria-label="first") 
+            .col-12.col-md-6
+                label.form-label(for="second") Label
+                input.form-control.p-3(type="text" placeholder="Placeholder" aria-label="second")
+            .col-12         
+                label.form-label(for="third")
+                textarea.form-control.p-3(id="third" rows="3")
+            .col.d-flex.justify-content-end
+                .btn.subscription-btn.py-3.px-4 Отправить

@@ -29,5 +29,15 @@ const buildPug = () => {
     .pipe(dest('build/'))
 }
 
+const addAssets = () => {
+    return src('app/images/**')
+        .pipe(dest('build/images/'));
+};
+
+const addFonts = () => {
+    return src('app/fonts/**')
+        .pipe(dest('build/fonts/'));
+};
+
 exports.server = browserSyncJob;
-exports.default = parallel(buildSass, buildPug);
+exports.default = parallel(buildSass, buildPug, addAssets, addFonts);

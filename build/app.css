@@ -1,3 +1,15 @@
+@font-face {
+  font-weight: 700;
+  font-family: "GolosText Bold";
+  font-style: normal;
+  src: url("./fonts/GolosText-Bold.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "GolosText Regular";
+  font-style: normal;
+  src: url("./fonts/GolosText-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +17,104 @@
   outline: 0;
 }
 
-html {
+body {
   font-size: 16px;
-  font-family: "Golos Text", sans-serif;
+  font-family: "GolosText Regular";
+  color: #132141;
 }
 
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "GolosText Bold";
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 56px;
+    line-height: 68px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "GolosText Bold";
+}
+@media (min-width: 576px) {
+  h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "GolosText Bold";
+}
+@media (min-width: 576px) {
+  h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+
+.subscription {
+  padding: 20px;
+  margin: 30px 0;
+  background: #F3F6FA;
+  border-radius: 8px;
+}
+@media (min-width: 576px) {
+  .subscription {
+    padding: 40px;
+    margin: 40px 0;
+  }
+}
+.subscription-btn {
+  background: #10BD99;
+  border-radius: 8px;
+}
+
+.text_green {
+  color: #10BD99;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "GolosText Bold";
+  font-style: normal;
+  src: url("./fonts/GolosText-Bold.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "GolosText Regular";
+  font-style: normal;
+  src: url("./fonts/GolosText-Regular.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "GolosText Bold";
+  font-style: normal;
+  src: url("./fonts/GolosText-Bold.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "GolosText Regular";
+  font-style: normal;
+  src: url("./fonts/GolosText-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +122,76 @@ html {
   outline: 0;
 }
 
-html {
+body {
   font-size: 16px;
-  font-family: "Golos Text", sans-serif;
+  font-family: "GolosText Regular";
+  color: #132141;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "GolosText Bold";
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 56px;
+    line-height: 68px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "GolosText Bold";
+}
+@media (min-width: 576px) {
+  h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "GolosText Bold";
+}
+@media (min-width: 576px) {
+  h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+
+.subscription {
+  padding: 20px;
+  margin: 30px 0;
+  background: #F3F6FA;
+  border-radius: 8px;
+}
+@media (min-width: 576px) {
+  .subscription {
+    padding: 40px;
+    margin: 40px 0;
+  }
+}
+.subscription-btn {
+  background: #10BD99;
+  border-radius: 8px;
+}
+
+.text_green {
+  color: #10BD99;
 }
