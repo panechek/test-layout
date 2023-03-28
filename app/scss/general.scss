@@ -12,9 +12,15 @@ $regular: "GolosText Regular";
   }
   
 body {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 18px;
     font-family: $regular;
     color: #132141;
+
+    @media (min-width: 576px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 h1 {
@@ -52,11 +58,14 @@ h3 {
 
 .wrapper {
     width: 100%;
+    padding: 0 16px;
+    padding-bottom: 64px;
 
     @media (min-width: 576px) {
         max-width: 1020px;
         margin: 0 auto;
         padding: 0 5px;
+        padding-bottom: 80px;
     }
 }
 
@@ -71,12 +80,41 @@ h3 {
         margin: 40px 0;
     }
 
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
     &-btn {
         background: #10BD99;
         border-radius: 8px;
+        width: 100%;
+
+        @media (min-width: 576px) {
+            width: max-content;
+        }
     }
+
+    &__input {
+        & label {
+            font-size: 14px;
+        }
+        & input, textarea {
+            padding: 12px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+
 }
 
 .text_green {
     color: #10BD99;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }

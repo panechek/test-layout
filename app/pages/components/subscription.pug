@@ -1,17 +1,17 @@
 mixin subscription(img)
-    .d-flex.subscription
-    img(src="", alt="" class={"d-none": img})
-    form(action="#")
-        .row.gy-4 
-            h5.col-12.fw-bold Подписаться на новости
-            .col-12.col-md-6
-                label.form-label(for="first") Label
-                input.form-control.p-3(type="text" placeholder="Placeholder" aria-label="first") 
-            .col-12.col-md-6
-                label.form-label(for="second") Label
-                input.form-control.p-3(type="text" placeholder="Placeholder" aria-label="second")
-            .col-12         
-                label.form-label(for="third")
-                textarea.form-control.p-3(id="third" rows="3")
-            .col.d-flex.justify-content-end
-                .btn.subscription-btn.py-3.px-4 Отправить
+    .d-flex.subscription.flex-column.flex-md-row
+            img(src="./images/img-sub.png", alt="" class={"d-none": img}).me-md-4.mb-4.mb-md-0
+            form(action="#")
+                .row.gy-4 
+                    h3.col-12(class={"text-primary": !img}).subscription__title Подписаться на новости
+                    .col-12.col-md-6.subscription__input
+                        label.form-label(for="first") Label
+                        input.form-control(type="text" placeholder="Placeholder" aria-label="first") 
+                    .col-12.col-md-6.subscription__input
+                        label.form-label(for="second") Label
+                        input.form-control(type="text" placeholder="Placeholder" aria-label="second")
+                    .col-12.subscription__input         
+                        label.form-label(for="third") Label
+                        textarea.form-control(id="third" rows="2" placeholder="Placeholder")
+                    .col.d-flex.justify-content-end.subscription__input
+                        .btn.subscription-btn.py-2.py-md-3.px-md-4.px-2 Отправить
