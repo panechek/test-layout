@@ -7046,6 +7046,11 @@ h3 {
 .mb-40 {
   margin-bottom: 40px;
 }
+
+.notification {
+  background: #F3F6FA;
+  border-radius: 12px;
+}
 @font-face {
   font-weight: 700;
   font-family: "GolosText Bold";
@@ -7183,4 +7188,9 @@ h3 {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.notification {
+  background: #F3F6FA;
+  border-radius: 12px;
 }
